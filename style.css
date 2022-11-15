@@ -1,0 +1,459 @@
+/* Couleurs : */
+
+
+/* Bleu : rgb (0, 85, 164) */
+
+
+/* Blanc : rgb (255, 255, 255) */
+
+
+/* Rouge : rgb (239, 65, 53) */
+
+
+/*.flag {
+        background: linear-gradient(60deg, rgb(0, 85, 165), rgb(255, 255, 255), rgb(239, 65, 53));
+    }*/
+
+
+/* Général */
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+}
+
+
+/* Page index */
+
+.name {
+    font-weight: 700;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: rgb(239, 65, 53);
+    text-shadow: 0.5em 0.5em 0.5em rgb(239, 65, 53);
+}
+
+.index-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2em;
+    margin: 2em;
+    margin-top: 1em;
+}
+
+.logo,
+.logo-barnav {
+    width: 10vw;
+}
+
+.logo img,
+.logo-barnav img {
+    max-width: 5em;
+    border-radius: 100%;
+}
+
+.logo-barnav img:hover {
+    opacity: 0.7;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    width: 70vw;
+    text-align: center;
+    gap: 2em;
+    padding-left: 4em;
+    font-weight: 600;
+}
+
+.nav-list li {
+    text-transform: uppercase;
+}
+
+.nav-list li:hover {
+    opacity: 0.5;
+}
+
+.nav-list a {
+    color: black;
+}
+
+.titre {
+    font-size: 1.5em;
+    font-weight: 500;
+    text-shadow: 0.5em 0.5em 0.5em black;
+}
+
+.article {
+    height: 15rem;
+}
+
+.presentation-menu {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(0, 85, 164);
+    color: rgb(255, 255, 255)
+}
+
+.presentation-menu p,
+.buttom {
+    margin: 1em;
+    margin-left: 3em;
+}
+
+.presentation-article {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    font-weight: 600;
+}
+
+.presentation-article button {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 85, 164);
+}
+
+.presentation-article button:hover {
+    background-color: rgb(239, 65, 53);
+    color: rgb(255, 255, 255);
+}
+
+.buttom {
+    text-align: center;
+    padding: 1em;
+    border-radius: 30px;
+    position: relative;
+    top: -1em;
+    width: 30em;
+}
+
+.buttom:hover {
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+.tablespace {
+    position: relative;
+    top: -1em;
+    left: 12em;
+    background: linear-gradient(60deg, rgb(0, 85, 165), rgb(255, 255, 255), rgb(239, 65, 53));
+    height: 16rem;
+    width: 30%;
+    padding: 1em;
+    padding-bottom: 10em;
+    border-radius: 10px;
+}
+
+.tablespace img {
+    position: relative;
+    top: 2em;
+    left: -11em;
+    border-radius: 30px;
+    height: 22em;
+    text-align: center;
+}
+
+.adhesion-menu {
+    height: 10rem;
+}
+
+.adhesion-menu p {
+    margin: 1em;
+    margin-left: 3em;
+}
+
+.adhesion-menu button:hover {
+    background-color: rgb(0, 85, 165);
+    color: rgb(255, 255, 255)
+}
+
+.activites-menu {
+    background-color: rgb(239, 65, 53);
+    margin: 5em;
+    border-radius: 16px;
+}
+
+.activites-menu p {
+    padding-top: 1em;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.footer {
+    height: 2em;
+    text-align: center;
+}
+
+.footer a {
+    color: black;
+}
+
+.footer a:hover {
+    opacity: 0.5;
+}
+
+
+/* Page adhesion */
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 10vw;
+    width: 80vw;
+    background-color: rgb(0, 85, 165);
+    color: rgb(255, 255, 255);
+    gap: 1em;
+    padding: 2em;
+    border-radius: 16px;
+    margin-bottom: 2vw;
+}
+
+.grid b {
+    text-shadow: 0.5em 0.5em 0.5em black;
+}
+
+.grid ul li {
+    list-style-type: disc;
+}
+
+.link {
+    font-weight: 700;
+    color: rgb(255, 255, 255)
+}
+
+.link:hover {
+    opacity: 0.5;
+}
+
+
+/* Page presentation */
+
+.arrowup {
+    position: relative;
+    left: 7vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: black
+}
+
+.arrowup:hover {
+    opacity: 0.5;
+}
+
+.grid-presentation {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 7vw;
+    width: 81vw;
+    background-color: rgb(0, 85, 165);
+    color: rgb(255, 255, 255);
+    padding: 2em;
+    border-radius: 16px;
+    margin-bottom: 1em;
+    text-align: justify;
+}
+
+.underbar {
+    position: relative;
+    top: 2em;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.underbar a {
+    color: rgb(255, 255, 255)
+}
+
+.underbar a:hover {
+    opacity: 0.5;
+}
+
+.footer-pres {
+    margin-top: 2em;
+}
+
+.grid-presentation h1 {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.grid-presentation h2 {
+    font-size: 1.3em;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+}
+
+.grid-presentation h1,
+h2,
+h3 {
+    text-shadow: 0.5em 0.5em 0.5em black;
+}
+
+.grid-presentation h3,
+p {
+    margin-bottom: 1em;
+}
+
+.grid-presentation img {
+    max-width: 50vh;
+    border-radius: 16px;
+    margin-right: 2em;
+    margin-bottom: 1em;
+    margin-left: 2em;
+}
+
+.circle img {
+    border-radius: 100%;
+}
+
+
+/* Page contact */
+
+.grid-presentation input,
+.grid-presentation textarea {
+    margin-bottom: 1em;
+    background-color: rgb(224, 205, 205);
+}
+
+.button {
+    margin-top: 2em;
+    text-align: center;
+}
+
+.button-deco {
+    padding: 1em 2em;
+    background: rgb(255, 255, 255);
+}
+
+.grid-contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-contact input {
+    width: 100%;
+}
+
+
+/* Page intermédaire*/
+
+.align-bloc {
+    display: flex;
+    flex-direction: row;
+}
+
+.bloc {
+    display: flex;
+    flex-direction: column;
+}
+
+.bloca,
+.blocb {
+    position: relative;
+    left: 28vw;
+}
+
+.bloc:hover {
+    filter: sepia(100%);
+    transition: filter 1s ease-out;
+}
+
+.bloc1 img,
+.bloc2 img,
+.bloc3 img {
+    position: relative;
+    top: 8vh;
+    left: 11vw;
+    border-radius: 100%;
+    height: 60%;
+}
+
+.bloc1-1 img,
+.bloc2-1 img {
+    position: relative;
+    left: 1vw;
+}
+
+.bloc1b,
+.bloc2b,
+.bloc3b {
+    position: relative;
+    bottom: 15vh;
+    left: 14vw;
+    font-size: 1em;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.bloc2b {
+    left: 16vw;
+}
+
+.bloc3b {
+    left: 16vw;
+}
+
+.bloc1a,
+.bloc2a {
+    left: 1.5vw;
+}
+
+.bloc1c {
+    left: 17.5vw;
+}
+
+.bloc2c {
+    left: 16.5vw;
+}
+
+.bloc3c {
+    left: 16.5vw;
+}
+
+.align-bloc a {
+    text-shadow: 0.5em 0.5em 0.5em black;
+    color: black
+}
+
+.flagbar {
+    position: absolute;
+    transform: translateY(12vh) skewY(-4deg);
+    height: 30vh;
+    width: 100vw;
+    background: linear-gradient(60deg, rgb(0, 85, 165), rgb(255, 255, 255), rgb(239, 65, 53));
+    z-index: -2;
+}
+
+.footer-int-pres {
+    position: relative;
+    top: -4vh;
+}
+
+
+/* Page activités */
+
+.construction {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1vw;
+}
+
+.construction img {
+    position: relative;
+    top: 1.5vw;
+    height: 27vh;
+}

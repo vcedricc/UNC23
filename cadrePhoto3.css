@@ -1,0 +1,425 @@
+.flagbar2,
+.flagbar3,
+.flagbar4,
+.flagbar5,
+.flagbar6,
+.flagbar7 {
+    position: absolute;
+    transform: translateY(80vh) skewY(15deg);
+    height: 30vh;
+    width: 100vw;
+    background: linear-gradient(60deg, rgb(0, 85, 165), rgb(255, 255, 255), rgb(239, 65, 53));
+    z-index: -2;
+    margin: 0;
+}
+
+.flagbar3 {
+    transform: translateY(150vh) skewY(-8deg);
+}
+
+.flagbar4 {
+    transform: translateY(200vh) skewY(10deg);
+}
+
+.flagbar5 {
+    transform: translateY(270vh) skewY(-15deg);
+}
+
+.flagbar6 {
+    transform: translateY(320vh) skewY(8deg);
+}
+
+.flagbar7 {
+    transform: translateY(390vh) skewY(-17deg);
+}
+
+#images-box {
+    /* La largeur totale du bloc conteneur, essentiellement pour le centrage */
+    width: 850px;
+    margin: 0px auto;
+    position: relative;
+    top: 2em;
+}
+
+.image-lightbox img {
+    /* Chaque image hérite ses dimensions de son parent */
+    width: inherit;
+    height: inherit;
+}
+
+.holder {
+    /* Dimension des images, vous pouvez les modifier */
+    width: 250px;
+    height: 166px;
+    /* Flottement à gauche, donc l'ensemble est aligné à droite */
+    float: left;
+    margin: 0 20px 0 0;
+}
+
+.holder-portrait {
+    /* Dimension des images, vous pouvez les modifier */
+    width: 150px;
+    height: 166px;
+    /* Flottement à gauche, donc l'ensemble est aligné à droite */
+    float: left;
+    margin: 0 20px 0 0;
+}
+
+.holder p {
+    position: relative;
+    font-size: 3em;
+    text-align: center;
+    font-weight: 700;
+    padding-top: 1em;
+    text-shadow: 0.5em 0.5em 0.5em;
+}
+
+.image-lightbox {
+    /* Les dimensions héritent de .holder */
+    width: inherit;
+    height: inherit;
+    padding: 10px;
+    /* Ombrage des blocs */
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.603);
+    background: rgb(33, 34, 34);
+    border-radius: 5px;
+    /* Position absolue pour permettre de zoomer ultérieurement */
+    position: absolute;
+    top: 0;
+    font-family: Arial, sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.image-lightbox-even-year {
+    background: rgb(116, 113, 113);
+}
+
+.image-lightbox span {
+    display: none;
+}
+
+.image-lightbox .expand {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4000;
+    background: rgba(0, 0, 0, 0);
+    /* Fixe un bogue d'IE */
+}
+
+.image-lightbox .close {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 20px;
+    top: 20px;
+}
+
+.image-lightbox .close a {
+    height: auto;
+    width: auto;
+    padding: 5px 10px;
+    color: #fff;
+    text-decoration: none;
+    background: #22272c;
+    box-shadow: inset 0px 24px 20px -15px rgba(255, 255, 255, 0.1), inset 0px 0px 10px rgba(0, 0, 0, 0.4), 0px 0px 30px rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    font-weight: bold;
+    float: right;
+}
+
+.close a:hover {
+    opacity: 0.5;
+    box-shadow: inset 0px -24px 20px -15px rgba(255, 255, 255, 0.01), inset 0px 0px 10px rgba(0, 0, 0, 0.4), 0px 0px 20px rgba(255, 255, 255, 0.4);
+}
+
+
+/* Affichage photos formats de base 950x712px */
+
+div[id^=image]:target {
+    width: 633px;
+    height: 474px;
+    z-index: 5000;
+    top: 50px;
+    left: 200px;
+}
+
+
+/* Affichage photos formats de base 1000x511px  */
+
+div#image-3:target,
+div#image-6:target,
+div#image-7:target,
+div#image-10:target,
+div#image-11:target,
+div#image-13:target {
+    width: 666px;
+    height: 340px;
+    z-index: 5000;
+    top: 50px;
+    left: 200px;
+}
+
+
+/* Affichage photos en format portrait */
+
+div#image-41:target,
+div#image-42:target,
+div#image-43:target,
+div#image-51:target {
+    width: 418px;
+    height: 558px;
+    z-index: 5000;
+    top: 50px;
+    left: 200px;
+}
+
+div[id^=image]:target .close {
+    display: block;
+}
+
+div[id^=image]:target .expand {
+    display: none;
+}
+
+div[id^=image]:target {
+    left: 200px;
+}
+
+.page-pictures {
+    text-align: center;
+}
+
+.page-pictures a {
+    text-decoration: none;
+    color: black
+}
+
+.page-pictures a:hover {
+    opacity: 0.7;
+}
+
+.next-page,
+.return-page {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    align-items: center;
+}
+
+.next-page {
+    top: 2650px;
+}
+
+.return-page {
+    top: 1650px;
+    right: 870px;
+}
+
+.next-page a,
+.return-page a {
+    color: black
+}
+
+.next-page1:hover,
+.return-page:hover {
+    opacity: 0.5;
+}
+
+div#image-1,
+div#image-4,
+div#image-7,
+div#image-10,
+div#image-13,
+div#image-16,
+div#image-19,
+div#image-22,
+div#image-25,
+div#image-28,
+div#image-31,
+div#image-34,
+div#image-37,
+div#image-40,
+div#image-43,
+div#image-46,
+div#image-49,
+div#image-52,
+div#image-55,
+div#image-58,
+div#image-61,
+div#image-64 {
+    left: 0;
+}
+
+div#image-2,
+div#image-5,
+div#image-8,
+div#image-11,
+div#image-14,
+div#image-17,
+div#image-20,
+div#image-23,
+div#image-26,
+div#image-29,
+div#image-32,
+div#image-35,
+div#image-38,
+div#image-41,
+div#image-44,
+div#image-47,
+div#image-50,
+div#image-53,
+div#image-56,
+div#image-59,
+div#image-62,
+div#image-65 {
+    left: 290px;
+}
+
+div#image-3,
+div#image-6,
+div#image-9,
+div#image-12,
+div#image-15,
+div#image-18,
+div#image-21,
+div#image-24,
+div#image-27,
+div#image-30,
+div#image-33,
+div#image-36,
+div#image-39,
+div#image-42,
+div#image-45,
+div#image-48,
+div#image-51,
+div#image-54,
+div#image-57,
+div#image-60,
+div#image-63,
+div#image-66 {
+    left: 580px;
+}
+
+div#image-4,
+div#image-5,
+div#image-6 {
+    top: 200px;
+}
+
+div#image-7,
+div#image-8,
+div#image-9 {
+    top: 400px;
+}
+
+div#image-10,
+div#image-11,
+div#image-12 {
+    top: 600px;
+}
+
+div#image-13,
+div#image-14,
+div#image-15 {
+    top: 800px;
+}
+
+div#image-16,
+div#image-17,
+div#image-18 {
+    top: 1000px;
+}
+
+div#image-19,
+div#image-20,
+div#image-21 {
+    top: 1200px;
+}
+
+div#image-22,
+div#image-23,
+div#image-24 {
+    top: 1400px;
+}
+
+div#image-25,
+div#image-26,
+div#image-27 {
+    top: 1600px;
+}
+
+div#image-28,
+div#image-29,
+div#image-30 {
+    top: 1800px;
+}
+
+div#image-31,
+div#image-32,
+div#image-33 {
+    top: 2000px;
+}
+
+div#image-34,
+div#image-35,
+div#image-36 {
+    top: 2200px;
+}
+
+div#image-37,
+div#image-38,
+div#image-39 {
+    top: 2400px;
+}
+
+div#image-43,
+div#image-44,
+div#image-45 {
+    top: 200px;
+}
+
+div#image-46,
+div#image-47,
+div#image-48 {
+    top: 400px;
+}
+
+div#image-49,
+div#image-50,
+div#image-51 {
+    top: 600px;
+}
+
+div#image-52,
+div#image-53,
+div#image-54 {
+    top: 800px;
+}
+
+div#image-55,
+div#image-56,
+div#image-57 {
+    top: 1000px;
+}
+
+div#image-58,
+div#image-59,
+div#image-60 {
+    top: 1200px;
+}
+
+div#image-61,
+div#image-62,
+div#image-63 {
+    top: 1400px;
+}
+
+div#image-64,
+div#image-65,
+div#image-66 {
+    top: 1600px;
+}
