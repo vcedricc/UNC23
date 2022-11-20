@@ -456,9 +456,6 @@
             top: 0vh;
             left: 34vw;
         }
-        .footer-index {
-            text-align: left;
-        }
         nav {
             height: 60px;
         }
@@ -485,6 +482,8 @@
         }
         #toggle:checked+.main_pages {
             display: flex;
+            position: relative;
+            z-index: 500;
         }
         .footer-index {
             top: 57vh;
