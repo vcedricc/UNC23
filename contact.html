@@ -13,60 +13,66 @@
 </head>
 
 <body class="flag">
-    <header class="index-header">
-        <div class="logo-barnav">
-            <a href="./index.html" title="revenir à la page d'accueil">
-                <img src="./images/5f228142590000616b2d9551.png" alt="logo UNC">
-            </a>
-        </div>
-        <div>
-            <div>
-                <p class="name">Union nationale des combattants - Association départementale de la Creuse</p>
+    <div class="align-all">
+        <header class="index-header">
+            <div class="logo-barnav">
+                <a href="./index.html" title="revenir à la page d'accueil">
+                    <img src="./images/5f228142590000616b2d9551.png" alt="logo UNC">
+                </a>
             </div>
-            <nav>
-                <ul class="nav-list">
-                    <li><a href="./inter-pres.html">Présentation</a></li>
-                    <li><a href="./inter-events.html">Activités/Actualités</a></li>
-                    <li><a href="./inter-adhesion.html">Qui peux adhérer ?</a></li>
-                    <li><a href="./photos.html">Album photos</a></li>
-                    <li><a href="./contact.html">Contacter-nous</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <main>
-        <div class="grid-presentation">
-            <h1>Formulaire de contact</h1>
-        </div>
-        <article class="grid-presentation">
-            <p>En cas de problème avec le présent formulaire, vous pouvez nous contacter directement à l'adresse <a class="link" href="mailto:unc23.secretariat@gmail.com">unc23.secretariat@gmail.com</a></p>
-            <form action="./formulaire.php" method="post">
-                <div class="grid-contact">
-                    <h2>Votre identité</h2>
-                    <label for="name">Votre nom et prénom :</label>
-                    <input type="text" id="name" name="user_name" placeholder="Charles DUPONT" required>
-                    <h2>Vos coordonnées</h2>
-                    <label for="mail">Votre adresse courriel :</label>
-                    <input type="email" id="mail" name="user_mail" placeholder="motivex@moraline.com">
-                    <br/>
-                    <label for="phone">Votre numéro de téléphone :</label>
-                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="01-01-01-01-01" required>
-                </div>
+            <div>
                 <div>
-                    <h2><label for="msg">Votre message</label></h2>
-                    <textarea id="msg" name="user_message" style="width: 81vw; height: 30vh" required></textarea>
-                    <div class="button">
-                        <button class="button-deco buttom" type="submit">Envoyer votre message</button>
-                    </div>
+                    <p class="name">Union nationale des combattants - Association départementale de la Creuse</p>
                 </div>
-            </form>
-        </article>
-    </main>
+                <nav>
+                    <label for="toggle">☰</label>
+                    <input type="checkbox" id="toggle">
+                    <ul class="nav-list main_pages">
+                        <li><a href="./inter-pres.html">Présentation</a></li>
+                        <li><a href="./inter-events.html">Activités/Actualités</a></li>
+                        <li><a href="./inter-adhesion.html">Qui peux adhérer ?</a></li>
+                        <div class="delpictures">
+                            <li><a href="./photos.html">Album photos</a></li>
+                        </div>
+                        <li><a href="./contact.html">Contacter-nous</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-    <footer class="footer">
-        <p><a href="./mentions.html">Mentions Légales</a> | <a href="./contact.html">Nous contacter</a></p>
-    </footer>
+        <main>
+            <div class="grid-presentation">
+                <h1>Formulaire de contact</h1>
+            </div>
+            <article class="grid-presentation">
+                <p>En cas de problème avec le présent formulaire, vous pouvez nous contacter directement à l'adresse <a class="link" href="mailto:unc23.secretariat@gmail.com">unc23.secretariat@gmail.com</a></p>
+                <form action="./formulaire.php" method="post">
+                    <div class="grid-contact">
+                        <h2>Votre identité</h2>
+                        <label for="name">Votre nom et prénom :</label>
+                        <input type="text" id="name" name="user_name" placeholder="Charles DUPONT" required>
+                        <h2>Vos coordonnées</h2>
+                        <label for="mail">Votre adresse courriel :</label>
+                        <input type="email" id="mail" name="user_mail" placeholder="motivex@moraline.com">
+                        <br/>
+                        <label for="phone">Votre numéro de téléphone :</label>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="01-01-01-01-01" required>
+                    </div>
+                    <div>
+                        <h2><label for="msg">Votre message</label></h2>
+                        <textarea id="msg" name="user_message" style="width: 81vw; height: 30vh" required></textarea>
+                        <div class="button">
+                            <button class="button-deco buttom" type="submit">Envoyer votre message</button>
+                        </div>
+                    </div>
+                </form>
+            </article>
+        </main>
+
+        <footer class="footer">
+            <p><a href="./mentions.html">Mentions Légales</a> | <a href="./contact.html">Nous contacter</a></p>
+        </footer>
+    </div>>
 </body>
 
 </html>

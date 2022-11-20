@@ -58,7 +58,7 @@
 
 .holder-portrait {
     /* Dimension des images, vous pouvez les modifier */
-    width: 150px;
+    width: 140px;
     height: 166px;
     /* Flottement à gauche, donc l'ensemble est aligné à droite */
     float: left;
@@ -136,41 +136,25 @@
 }
 
 
-/* Affichage photos formats de base 950x712px */
+/* Affichage photos formats paysages */
 
 div[id^=image]:target {
-    width: 633px;
-    height: 474px;
+    width: 70vw;
+    height: auto;
     z-index: 5000;
     top: 50px;
     left: 200px;
 }
 
 
-/* Affichage photos formats de base 1000x511px  */
-
-div#image-3:target,
-div#image-6:target,
-div#image-7:target,
-div#image-10:target,
-div#image-11:target,
-div#image-13:target {
-    width: 666px;
-    height: 340px;
-    z-index: 5000;
-    top: 50px;
-    left: 200px;
-}
-
-
-/* Affichage photos en format portrait */
+/* Affichage photos en format portraits */
 
 div#image-41:target,
 div#image-42:target,
 div#image-43:target,
 div#image-51:target {
-    width: 418px;
-    height: 558px;
+    width: 30vw;
+    height: auto;
     z-index: 5000;
     top: 50px;
     left: 200px;
