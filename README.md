@@ -2,4 +2,4 @@
 
 html, CSS
 
-Project Laptot only for moment
+Project responsive (pictures album, hamburger bar)
