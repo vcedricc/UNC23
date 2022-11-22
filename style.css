@@ -546,7 +546,7 @@
     .link:hover {
         opacity: 0.5;
     }
-    /* Page presentation */
+    /* Pages presentation, activites, adhesion, mentions, necro */
     
     .arrowup {
         position: relative;
@@ -641,6 +641,10 @@
         }
         .grid-presentation h2 {
             font-size: 1em;
+        }
+        .footer-page {
+            position: relative;
+            top: 1em;
         }
     }
     /* Page contact */
